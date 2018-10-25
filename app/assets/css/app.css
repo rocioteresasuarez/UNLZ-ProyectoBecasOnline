@@ -2924,6 +2924,8 @@ label.success { color: #37c936; }
 
 .card-block { padding: 30px; }
 
+.card-block-market { padding: 100px; }
+
 .portlet { position: absolute; top: 0px; right: 0px; z-index: 1; }
 
 .portlet .portlet-item { list-style: none; padding: 18px 20px; }
