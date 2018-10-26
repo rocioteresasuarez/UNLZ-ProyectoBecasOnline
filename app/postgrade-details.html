@@ -41,51 +41,53 @@
                     </div>
                     <ul class="side-nav-menu scrollable">
                         <li class="nav-item active">
-                            <a class="mrg-top-30" href="index_admin.html">
+                            <a class="mrg-top-30" href="index.html">
                                 <span class="icon-holder">
                                     <i class="ti-home"></i>
                                 </span>
-                                <span class="title">Principal</span>
+                                <span class="title">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="mrg" href="universities.html">
+                            <a class="mrg" href="login.html">
                                 <span class="icon-holder">
                                     <i class="ti-home"></i>
                                 </span>
-                                <span class="title">Universidades</span>
+                                <span class="title">Entrar</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="mrg" href="companies.html">
+                            <a class="mrg" href="sign-up.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Registrarse</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="mrg" href="companies-for-user.html">
                                 <span class="icon-holder">
                                     <i class="ti-home"></i>
                                 </span>
                                 <span class="title">Empresas</span>
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="aspirants.html">
+                        <li class="nav-item active">
+                            <a class="mrg" href="universities-for-user.html">
                                 <span class="icon-holder">
-                                    <i class="ti-package"></i>
+                                    <i class="ti-home"></i>
                                 </span>
-                                <span class="title">Aspirantes</span>
-
+                                <span class="title">Universidades</span>
                             </a>
-
                         </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="postgrades.html">
+                        <li class="nav-item active">
+                            <a class="mrg" href="postgrades-for-users.html">
                                 <span class="icon-holder">
-                                    <i class="ti-package"></i>
+                                    <i class="ti-home"></i>
                                 </span>
                                 <span class="title">Novedades</span>
-
                             </a>
-
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -102,18 +104,63 @@
                                     <i class="ti-view-grid"></i>
                                 </a>
                             </li>
+                            <li class="search-box">
+                                <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                                    <i class="search-icon ti-search pdd-right-10"></i>
+                                    <i class="search-icon-close ti-close pdd-right-10"></i>
+                                </a>
+                            </li>
+                            <li class="search-input">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <div class="advanced-search">
+                                    <div class="search-wrapper">
 
+                                    </div>
+                                    <div class="search-footer">
+                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                         <ul class="nav-right">
                             <li class="user-profile dropdown">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                     <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
                                     <div class="user-info">
-                                        <span class="name pdd-right-5">Administrador</span>
+                                        <span class="name pdd-right-5">Usuario</span>
                                         <i class="ti-angle-down font-size-10"></i>
                                     </div>
                                 </a>
+                                <ul class="dropdown-menu">
 
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Mi perfil</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-more-data.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Mas Datos</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="my-postgrades.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Postulaciones</span>
+                                        </a>
+                                    </li>
+
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-power-off pdd-right-10"></i>
+                                            <span>Cerrar Session</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
 
                         </ul>
@@ -134,7 +181,7 @@
                                             <ul class="list-unstyled list-info">
                                                 <li>
                                                     <span class="thumb-img pdd-top-10">
-                                                        <i class="ti-help-alt text-primary font-size-30"></i>
+                                                        <i class="ei-open-book text-primary font-size-30"></i>
                                                     </span>
                                                     <div class="info">
                                                         <b class="text-dark font-size-22">Posgrado en Dirección de
@@ -266,26 +313,41 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Footer START -->
+                <footer class="content-footer">
+                    <div class="footer">
+                        <div class="copyright">
+
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer END -->
+
             </div>
+            <!-- Page Container END -->
 
-            <!-- build:js assets/js/vendor.js -->
-            <!-- plugins js -->
-            <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-            <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
-            <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="../bower_components/PACE/pace.min.js"></script>
-            <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-            <!-- endbuild -->
+        </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/PACE/pace.min.js"></script>
+    <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <!-- endbuild -->
 
 
 
-            <!-- build:js assets/js/app.min.js -->
-            <!-- core js -->
-            <script src="assets/js/app.js"></script>
-            <!-- endbuild -->
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
 
-            <!-- page js -->
-            <script src="assets/js/dashboard/dashboard.js"></script>
+    <!-- page js -->
+    <script src="assets/js/dashboard/dashboard.js"></script>
 
 </body>
 
