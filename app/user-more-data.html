@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Becas Online</title>
+
+    <!-- Favicon -->
+
+
+    <!-- plugins css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <link rel="stylesheet" href="assets/css/sweetalert.css" />
+
+    <!-- core css -->
+    <link href="assets/css/ei-icon.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="layout">
+            <!-- Side Nav START -->
+            <div class="side-nav">
+                <div class="side-nav-inner">
+                    <div class="side-nav-logo">
+                        <a href="index.html">
+                            <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
+                            <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
+                        </a>
+                        <div class="mobile-toggle side-nav-toggle">
+                            <a href="">
+                                <i class="ti-arrow-circle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="side-nav-menu scrollable">
+                        <li class="nav-item active">
+                            <a class="mrg-top-30" href="index.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mrg" href="login.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Entrar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mrg" href="sign-up.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Registrarse</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="mrg" href="companies-for-user.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Empresas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="mrg" href="universities-for-user.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Universidades</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="mrg" href="postgrades-for-users.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Novedades</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Side Nav END -->
+
+            <!-- Page Container START -->
+            <div class="page-container">
+                <!-- Header START -->
+                <div class="header navbar">
+                    <div class="header-container">
+                        <ul class="nav-left">
+                            <li>
+                                <a class="side-nav-toggle" href="javascript:void(0);">
+                                    <i class="ti-view-grid"></i>
+                                </a>
+                            </li>
+                            <li class="search-box">
+                                <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                                    <i class="search-icon ti-search pdd-right-10"></i>
+                                    <i class="search-icon-close ti-close pdd-right-10"></i>
+                                </a>
+                            </li>
+                            <li class="search-input">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <div class="advanced-search">
+                                    <div class="search-wrapper">
+
+                                    </div>
+                                    <div class="search-footer">
+                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                                    <div class="user-info">
+                                        <span class="name pdd-right-5">Usuario</span>
+                                        <i class="ti-angle-down font-size-10"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Mi perfil</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-more-data.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Mas Datos</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="my-postgrades.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Postulaciones</span>
+                                        </a>
+                                    </li>
+
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-power-off pdd-right-10"></i>
+                                            <span>Cerrar Session</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header END -->
+                <div class="main-content">
+                    <div class="container-fluid">
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-heading border bottom">
+                                        <h4 class="card-title">Completa Tus Datos Personales</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="row">
+                                            <div class="col-md-12 ml-auto mr-auto">
+                                                <form class="form-horizontal mrg-top-40 pdd-right-30 ng-pristine ng-valid">
+                                                    <div class="form-group row">
+                                                        <label for="form-1-1" class="col-md-2 control-label">Apellido</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-1"
+                                                                placeholder="Apellido">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-1" class="col-md-2 control-label">Nombre</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-1"
+                                                                placeholder="Nombre">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Email</label>
+                                                        <div class="col-md-10">
+                                                            <input type="email" class="form-control" id="form-1-3"
+                                                                placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Tipo de
+                                                            Documento</label>
+                                                        <div class="col-md-10">
+                                                            <select id="selectize-dropdown">
+                                                                <option value="" disabled selected>Seleccionar un tipo
+                                                                    de
+                                                                    Documento...</option>
+                                                                <option value="D">DNI</option>
+                                                                <option value="C">CUIT</option>
+                                                                <option value="L">CUIL</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Numero de
+                                                            Documento</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Numero de Documento">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Domicilio</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Domicilio">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Cuidad</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Cuidad">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Cod.
+                                                            Postal</label>
+                                                        <div class="col-md-2">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Cuidad">
+                                                        </div>
+                                                        <label for="form-1-3" class="col-md-2 control-label">Provincia</label>
+                                                        <div class="col-md-2">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Provincia">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Telefono</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Telefono">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Ocupacion</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Ocupacion">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Titulo</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Titulo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Promedio</label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Promedio">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="form-1-3" class="col-md-2 control-label">Facultad
+                                                            Otorgante </label>
+                                                        <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="form-1-3"
+                                                                placeholder="Facultad">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group row">
+                                                        <div class="col-md-10">
+                                                            <div class="text-right mrg-top-15">
+                                                                <button type="button" class="btn btn-primary border-radius-6 swal-success">Aceptar</button>
+                                                                <button type="button" class="btn btn-default border-radius-6">Cancelar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer START -->
+            <footer class="content-footer">
+                <div class="footer">
+                    <div class="copyright">
+
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer END -->
+
+        </div>
+        <!-- Page Container END -->
+
+    </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/PACE/pace.min.js"></script>
+    <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <!-- endbuild -->
+
+
+    <script src="../bower_components/sweetalert/lib/sweet-alert.js"></script>
+    <script src="../bower_components/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/apps/more-data.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- page js -->
+
+
+</body>
+
+</html>
