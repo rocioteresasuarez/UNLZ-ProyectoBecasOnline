@@ -29,7 +29,7 @@
             <div class="side-nav">
                 <div class="side-nav-inner">
                     <div class="side-nav-logo">
-                        <a href="index_admin.html">
+                        <a href="index_jubge.html">
                             <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
                             <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
                         </a>
@@ -41,22 +41,15 @@
                     </div>
                     <ul class="side-nav-menu scrollable">
                         <li class="nav-item active">
-                            <a class="mrg-top-30" href="index_admin.html">
+                            <a class="mrg-top-30" href="index_jubge.html">
                                 <span class="icon-holder">
                                     <i class="ti-home"></i>
                                 </span>
-                                <span class="title">Principal</span>
+                                <span class="title">Dashboard</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="mrg" href="universities.html">
-                                <span class="icon-holder">
-                                    <i class="ti-home"></i>
-                                </span>
-                                <span class="title">Universidades</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
+
+                        <li class="nav-item active">
                             <a class="mrg" href="companies.html">
                                 <span class="icon-holder">
                                     <i class="ti-home"></i>
@@ -64,28 +57,38 @@
                                 <span class="title">Empresas</span>
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="aspirants.html">
+                        <li class="nav-item active">
+                            <a class="mrg" href="universities.html">
                                 <span class="icon-holder">
-                                    <i class="ti-package"></i>
+                                    <i class="ti-home"></i>
                                 </span>
-                                <span class="title">Aspirantes</span>
-
+                                <span class="title">Universidades</span>
                             </a>
-
                         </li>
-
                         <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="postgrades.html">
+                            <a class="dropdown-toggle" href="javascript:void(0);">
                                 <span class="icon-holder">
-                                    <i class="ti-package"></i>
+                                    <i class="ti-home"></i>
                                 </span>
                                 <span class="title">Novedades</span>
-
                             </a>
-
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="postgrades-for-jubges.html">Ver Novedades</a>
+                                </li>
+                                <li>
+                                    <a href="new-postgrade-for-jubges.html">Crear Novedad</a>
+                                </li>
+                            </ul>
                         </li>
-
+                        <li class="nav-item active">
+                            <a class="mrg" href="javascript:void(0);">
+                                <span class="icon-holder">
+                                    <i class="ti-file"></i>
+                                </span>
+                                <span class="title">Descargar Template</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -109,7 +112,7 @@
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                     <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
                                     <div class="user-info">
-                                        <span class="name pdd-right-5">Administrador</span>
+                                        <span class="name pdd-right-5">Jurado</span>
                                         <i class="ti-angle-down font-size-10"></i>
                                     </div>
                                 </a>
@@ -123,7 +126,6 @@
                                     </li>
                                 </ul>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -138,48 +140,116 @@
                                     </div>
                                     <div class="card-block">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-10">
+                                                <a href="" class="btn btn-success btn-inverse btn-rounded">Crear nueva
+                                                    Novedad</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10">
                                                 <div class="table-overflow">
                                                     <table class="table table-hover">
                                                         <tbody>
                                                             <tr>
-                                                                <td><a href="postgrade-details.html">Posgrado en
+                                                                <td><a href="postgrade-details-for-jubges.html">Posgrado
+                                                                        en
                                                                         Dirección de Empresas</a></td>
+                                                                <td>
+                                                                    <div class="checkbox mrg-left-20">
+                                                                        <input id="task1" name="task1" type="checkbox">
+                                                                        <label for="task1"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="edit-postgrade-for-jubges.html" class="btn btn-info">Editar</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="postgrade-details.html">Especialización en
+                                                                <td><a href="postgrade-details-for-jubges.html">Especialización
+                                                                        en
                                                                         Contabilidad, Auditoría y
                                                                         Tributación Internacionales</a></td>
+                                                                <td>
+                                                                    <div class="checkbox mrg-left-20">
+                                                                        <input id="task2" name="task2" type="checkbox">
+                                                                        <label for="task2"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="edit-postgrade-for-jubges.html" class="btn btn-info">Editar</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="postgrade-details.html">Maestría en
+                                                                <td><a href="postgrade-details-for-jubges.html">Maestría
+                                                                        en
                                                                         Dirección de Recursos Humanos</a> </td>
+                                                                <td>
+                                                                    <div class="checkbox mrg-left-20">
+                                                                        <input id="task3" name="task3" type="checkbox">
+                                                                        <label for="task3"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="edit-postgrade-for-jubges.html" class="btn btn-info">Editar</a>
+                                                                </td>
                                                             </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="table-overflow">
-                                                    <table class="table table-hover">
-                                                        <tbody>
                                                             <tr>
-                                                                <td><a href="postgrade-details.html">Doctorado en
+                                                                <td><a href="postgrade-details-for-jubges.html">Doctorado
+                                                                        en
                                                                         Economía</a></td>
+                                                                <td>
+                                                                    <div class="checkbox mrg-left-20">
+                                                                        <input id="task4" name="task4" type="checkbox">
+                                                                        <label for="task4"></label>
+                                                                    </div>
+
+                                                                </td>
+                                                                <td>
+                                                                    <a href="edit-postgrade-for-jubges.html" class="btn btn-info">Editar</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="postgrade-details.html">Posgrado en
+                                                                <td><a href="postgrade-details-for-jubges.html">Posgrado
+                                                                        en
                                                                         Marketing</a></td>
+                                                                <td>
+                                                                    <div class="checkbox mrg-left-20">
+                                                                        <input id="task5" name="task5" type="checkbox">
+                                                                        <label for="task5"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="edit-postgrade-for-jubges.html" class="btn btn-info">Editar</a>
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="postgrade-details.html">Maestría en
+                                                                <td><a href="postgrade-details-for-jubges.html">Maestría
+                                                                        en
                                                                         Derecho Empresarial</a></td>
+                                                                <td>
+                                                                    <div class="checkbox mrg-left-20">
+                                                                        <input id="task6" name="task6" type="checkbox">
+                                                                        <label for="task6"></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <a href="edit-postgrade-for-jubges.html" class="btn btn-info">Editar</a>
+                                                                </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
+
                                             </div>
 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-10">
+                                                <a href="" class="btn btn-danger" style="float: right">
+                                                    <i class="ti-trash pdd-right-5"></i>
+                                                    <span>Eliminar Novedades</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
