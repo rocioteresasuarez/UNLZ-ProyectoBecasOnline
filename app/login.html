@@ -7,14 +7,14 @@
     <title>Becas Online</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
     <!-- plugins css -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
     <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
-    
+
 
     <!-- core css -->
     <link href="assets/css/ei-icon.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="assets/css/app.css" rel="stylesheet">
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="formCtrl">
     <div class="app">
         <div class="authentication">
             <div class="sign-in-2">
@@ -39,16 +39,21 @@
                                                 <div class="card-body">
                                                     <div class="pdd-horizon-30 pdd-vertical-30">
                                                         <div class="mrg-btm-30">
-                                                            <img class="img-responsive inline-block" src="assets/images/logo/logo.png" alt="">
-                                                            <h2 class="inline-block pull-right no-mrg-vertical pdd-top-15">Iniciar sesion</h2>
+                                                            <img class="img-responsive inline-block" src="assets/images/logo/logo.png"
+                                                                alt="">
+                                                            <h2 class="inline-block pull-right no-mrg-vertical pdd-top-15">Iniciar
+                                                                sesion</h2>
                                                         </div>
-                                                        <p class="mrg-btm-15 font-size-13">Por favor ingrese su email y su contraseña</p>
+                                                        <p class="mrg-btm-15 font-size-13">Por favor ingrese su email y
+                                                            su contraseña</p>
                                                         <form>
                                                             <div class="form-group">
-                                                                <input type="email" class="form-control" placeholder="Email">
+                                                                <input type="text" class="form-control" placeholder="Email"
+                                                                    ng-model="user.user">
                                                             </div>
                                                             <div class="form-group">
-                                                                <input type="password" class="form-control" placeholder="Contraseña">
+                                                                <input type="password" class="form-control" placeholder="Contraseña"
+                                                                    ng-model="user.password">
                                                             </div>
                                                             <!-- <div class="checkbox font-size-13 inline-block no-mrg-vertical no-pdd-vertical">
                                                                 <input id="agreement" name="agreement" type="checkbox">
@@ -58,9 +63,12 @@
                                                                 <a href="">¿Olvidaste tu contraseña??</a>
                                                             </div>
                                                             <div class="mrg-top-20 text-right">
-                                                                <button class="btn btn-info" on-click="">Iniciar sesion</button>
+                                                                <button class="btn btn-info" ng-click="login()">Iniciar
+                                                                    sesion</button>
                                                             </div>
                                                         </form>
+                                                        <p class="mrg-btm-15 font-size-13 btn btn-danger btn-inverse btn-rounded" ng-show="showmessage"><b>{{message
+                                                            }}</b></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -84,9 +92,45 @@
     <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
     <!-- endbuild -->
 
+
+
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
-    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('formCtrl', function ($scope) {
+            $scope.user;
+            $scope.message = "El usuario y la contraseña no coinciden."
+            $scope.showmessage = false;
+            vm = $scope;
+
+            $scope.login = function () {
+                if (vm.user.user == "admin" && vm.user.password == "admin123") {
+                    $scope.showmessage = false;
+                    window.location.href = "index_admin.html";
+                    return;
+                    console.log("admin");
+                }
+                else { $scope.showmessage = true; }
+                if (vm.user.user == "rocio" && vm.user.password == "rocio123") {
+                    console.log("rocio");
+                    $scope.showmessage = false;
+                    window.location.href = "index-user.html";
+                    return;
+                }
+                else { $scope.showmessage = true; }
+                if (vm.user.user == "utn1" && vm.user.password == "utn1") {
+                    console.log("utn1");
+                    $scope.showmessage = false;
+                    window.location.href = "index_jubge.html";
+                    return;
+                }
+                else { $scope.showmessage = true; }
+            };
+
+        });
+    </script>
     <!-- endbuild -->
 
     <!-- page js -->
