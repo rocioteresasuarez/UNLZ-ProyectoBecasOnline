@@ -29,7 +29,7 @@
             <div class="side-nav">
                 <div class="side-nav-inner">
                     <div class="side-nav-logo">
-                        <a href="index_jubge.html">
+                        <a href="index-user.html">
                             <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
                             <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
                         </a>
@@ -41,62 +41,31 @@
                     </div>
                     <ul class="side-nav-menu scrollable">
                         <li class="nav-item active">
-                            <a class="mrg-top-30" href="index_jubge.html">
+                            <a class="mrg-top-30" href="index-user.html">
                                 <span class="icon-holder">
                                     <i class="ti-home"></i>
                                 </span>
                                 <span class="title">Principal</span>
                             </a>
                         </li>
-
+                        
                         <li class="nav-item active">
-                            <a class="mrg" href="companies-for-jubges.html">
+                            <a class="mrg" href="companies-for-user.html">
                                 <span class="icon-holder">
-                                    <i class="ti-home"></i>
+                                    <i class="ei-briefcase"></i>
                                 </span>
                                 <span class="title">Empresas</span>
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="mrg" href="universities-for-jubges.html">
+                            <a class="mrg" href="universities-for-user.html">
                                 <span class="icon-holder">
-                                    <i class="ti-home"></i>
+                                    <i class="ei-bank"></i>
                                 </span>
                                 <span class="title">Universidades</span>
                             </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="mrg" href="aspirants-for-jubges.html">
-                                <span class="icon-holder">
-                                    <i class="ti-home"></i>
-                                </span>
-                                <span class="title">Aspirantes</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
-                                <span class="icon-holder">
-                                    <i class="ti-home"></i>
-                                </span>
-                                <span class="title">Novedades</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="postgrades-for-jubges.html">Ver Novedades</a>
-                                </li>
-                                <li>
-                                    <a href="new-postgrade-for-jubges.html">Crear Novedad</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="mrg" href="javascript:void(0);">
-                                <span class="icon-holder">
-                                    <i class="ti-file"></i>
-                                </span>
-                                <span class="title">Descargar Template</span>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -136,12 +105,33 @@
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                     <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
                                     <div class="user-info">
-                                        <span class="name pdd-right-5">Jurado</span>
+                                        <span class="name pdd-right-5">Usuario</span>
                                         <i class="ti-angle-down font-size-10"></i>
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <!-- <li role="separator" class="divider"></li> -->
+
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Mi perfil</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-more-data.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Mas Datos</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="my-postgrades.html">
+                                            <i class="ti-user pdd-right-10"></i>
+                                            <span>Postulaciones</span>
+                                        </a>
+                                    </li>
+
+                                    <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="">
                                             <i class="ti-power-off pdd-right-10"></i>
@@ -150,6 +140,7 @@
                                     </li>
                                 </ul>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -233,7 +224,64 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#accordion-ask-1"
+                                                                    href="#collapse-ask-3">
+                                                                    <span>Postularse</span>
+                                                                    <i class="icon ti-arrow-circle-down"></i>
+                                                                </a>
+                                                            </h4>
+                                                        </div>
+                                                        <div id="collapse-ask-3" class="collapse panel-collapse">
+                                                            <div class="panel-body">
+                                                                <div class="form-group row">
+                                                                    <label for="form-1-" class="col-md-3 control-label">Sedes
+                                                                        Disponibles</label>
+                                                                    <div class="col-md-10">
+                                                                        <select id="selectize-dropdown" class="form-control">
+                                                                            <option value="" disabled selected>Seleccionar
+                                                                                una
+                                                                                universidad...</option>
+                                                                            <option value="4">UTN</option>
+                                                                            <option value="1">UADE</option>
+                                                                            <option value="3">UBA</option>
+                                                                            <option value="5">UNLZ</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label for="form-1-" class="col-md-3 control-label">Turnos
+                                                                        Disponibles</label>
+                                                                    <div class="col-md-10">
+                                                                        <select id="selectize-dropdown" class="form-control">
+                                                                            <option value="" disabled selected>Seleccionar
+                                                                                un
+                                                                                Turno...</option>
+                                                                            <option value="M">Turno Mañana</option>
+                                                                            <option value="T">Turno Tarde</option>
+                                                                            <option value="N">Turno Noche</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+
+                                                                    <div class="col-md-10">
+                                                                        <a href="" class="btn btn-info">
+                                                                            <i class="ti-export pdd-right-5"></i>
+                                                                            <span>Subir Documentacion</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <div class="col-md-10">
+                                                                        <a href="" class="btn btn-success btn-rounded">Success</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
