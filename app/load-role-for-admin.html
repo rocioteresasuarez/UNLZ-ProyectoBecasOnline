@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Becas Online</title>
+
+    <!-- Favicon -->
+
+
+    <!-- plugins css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="../bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- core css -->
+    <link href="assets/css/ei-icon.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="layout">
+            <!-- Side Nav START -->
+            <div class="side-nav">
+                <div class="side-nav-inner">
+                    <div class="side-nav-logo">
+                        <a href="index_admin.html">
+                            <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
+                            <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
+                        </a>
+                        <div class="mobile-toggle side-nav-toggle">
+                            <a href="">
+                                <i class="ti-arrow-circle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="side-nav-menu scrollable">
+                        <li class="nav-item active">
+                            <a class="mrg-top-30" href="index_admin.html">
+                                <span class="icon-holder">
+                                    <i class="ti-home"></i>
+                                </span>
+                                <span class="title">Principal</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mrg" href="universities-for-admin.html">
+                                <span class="icon-holder">
+                                    <i class="ei-bank"></i>
+                                </span>
+                                <span class="title">Universidades</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mrg" href="companies-for-admin.html">
+                                <span class="icon-holder">
+                                    <i class="ei-briefcase"></i>
+                                </span>
+                                <span class="title">Empresas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="aspirants-for-admin.html">
+                                <span class="icon-holder">
+                                    <i class="ti-user"></i>
+                                </span>
+                                <span class="title">Aspirantes</span>
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);">
+                                <span class="icon-holder">
+                                    <i class="ti-files"></i>
+                                </span>
+                                <span class="title">Novedades</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="edit-novelty-for-admin.html">Editar Novedades</a>
+                                </li>
+                                <li>
+                                    <a href="new-postgrade-for-admin.html">Crear Novedad</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);">
+                                <span class="icon-holder">
+                                    <i class="ti-view-list-alt"></i>
+                                </span>
+                                <span class="title">Roles y Permisos</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="edit-role-for-admin.html">Editar Permisos</a>
+                                </li>
+                                <li>
+                                    <a href="new-role-for-admin.html">Nuevo Permiso</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Side Nav END -->
+
+            <!-- Page Container START -->
+            <div class="page-container">
+                <!-- Header START -->
+                <div class="header navbar">
+                    <div class="header-container">
+                        <ul class="nav-left">
+                            <li>
+                                <a class="side-nav-toggle" href="javascript:void(0);">
+                                    <i class="ti-view-grid"></i>
+                                </a>
+                            </li>
+                            <li class="search-box">
+                                <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                                    <i class="search-icon ti-search pdd-right-10"></i>
+                                    <i class="search-icon-close ti-close pdd-right-10"></i>
+                                </a>
+                            </li>
+                            <li class="search-input">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <div class="advanced-search">
+                                    <div class="search-wrapper">
+
+                                    </div>
+                                    <div class="search-footer">
+                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                                    <div class="user-info">
+                                        <span class="name pdd-right-5">Administrador</span>
+                                        <i class="ti-angle-down font-size-10"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li role="separator" class="divider"></li> -->
+                                    <li>
+                                        <a href="">
+                                            <i class="ti-power-off pdd-right-10"></i>
+                                            <span>Cerrar Session</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header END -->
+                <div class="main-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-heading border bottom">
+                                        <h4 class="card-title">Editar Permiso</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="mrg">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Nombre</label>
+                                                                    <input type="text" placeholder="Nombre" class="form-control"
+                                                                        value="Evelina">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Apellido</label>
+                                                                    <input type="text" placeholder="Apellido" class="form-control"
+                                                                        value="Benavidez">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Usuario</label>
+                                                                    <input type="text" placeholder="Usuario" class="form-control"
+                                                                        value="evelinaB">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Clave</label>
+                                                                    <input type="password" placeholder="Clave" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Universidad</label>
+                                                                    <select id="selectize-dropdown" class="form-control">
+                                                                        <option value="" disabled selected>Seleccionar
+                                                                            una
+                                                                            universidad...</option>
+                                                                        <option value="4" selected>UTN</option>
+                                                                        <option value="1">UADE</option>
+                                                                        <option value="3">UBA</option>
+                                                                        <option value="5">UNLZ</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Empresa</label>
+                                                                    <select id="selectize-dropdown" class="form-control">
+                                                                        <option value="" selected>Seleccionar
+                                                                            una
+                                                                            Empresa...</option>
+                                                                        <option value="4">Accenture</option>
+                                                                        <option value="1">Global Logic</option>
+                                                                        <option value="3">Grupo Clarin</option>
+                                                                        <option value="5">Fravega</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Sede</label>
+                                                                    <select id="selectize-dropdown" class="form-control">
+                                                                        <option value="" selected>Seleccionar
+                                                                            una
+                                                                            Sede...</option>
+                                                                        <option value="4" selected>Avellaneda</option>
+                                                                        <option value="1">Sarandi</option>
+                                                                        <option value="3">Centro</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label>Dni</label>
+                                                                    <input type="text" placeholder="Dni" class="form-control"
+                                                                        value="10000009">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-xs-6">
+
+                                                                <button type="submit" class="btn btn-primary">Modificar
+                                                                    Permiso
+                                                                </button>
+
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer START -->
+                <footer class="content-footer">
+                    <div class="footer">
+                        <div class="copyright">
+                            <span>Copyright © 2018 <b class="text-dark">Becas Online</b>. Todos los derechos
+                                reservados.</span>
+                            <span class="go-right">Version 1.0</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer END -->
+
+            </div>
+            <!-- Page Container END -->
+
+        </div>
+    </div>
+
+    <!-- build:js assets/js/vendor.js -->
+    <!-- plugins js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/PACE/pace.min.js"></script>
+    <script src="../bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <!-- endbuild -->
+
+
+
+    <!-- build:js assets/js/app.min.js -->
+    <!-- core js -->
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+
+    <!-- page js -->
+    <script src="assets/js/dashboard/dashboard.js"></script>
+
+</body>
+
+</html>
